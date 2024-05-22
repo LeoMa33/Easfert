@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="Ho.CreateProfilPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <Grid Padding="10,10,10,30">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout
+                    HorizontalOptions="Start"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
+                    <Image
+                        HeightRequest="25"
+                        IsVisible="False"
+                        Source="ArrowIcon"
+                        x:Name="BackArrow" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        TextColor="Black"
+                        VerticalOptions="Center">
+                        Profile creation
+                    </Label>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout
+                Grid.Row="1"
+                Padding="20,60,20,20"
+                x:Name="ContentPage">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="24"
+                    Text="What's your name ?"
+                    TextColor="#242038"
+                    x:Name="Title" />
+
+                <Entry Placeholder="Your Name" x:Name="InputText" />
+            </StackLayout>
+
+            <StackLayout
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                Orientation="Horizontal">
+                <Frame
+                    BackgroundColor="#725AC1"
+                    CornerRadius="30"
+                    Padding="30,10">
+
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Spacing="20"
+                        VerticalOptions="Center">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Next" />
+                        </StackLayout.GestureRecognizers>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Next"
+                            TextColor="#F7ECE1"
+                            VerticalOptions="Center"
+                            x:Name="BtnText" />
+
+                        <Frame
+                            BackgroundColor="Transparent"
+                            HasShadow="False"
+                            Padding="0"
+                            WidthRequest="16">
+                            <Image Rotation="180" Source="ArrowIcon" />
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

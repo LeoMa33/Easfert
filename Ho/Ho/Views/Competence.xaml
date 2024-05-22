@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ViewCell
+    x:Class="Ho.Views.CompetenceView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid ColumnSpacing="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="120" />
+        </Grid.ColumnDefinitions>
+        <Frame
+            BackgroundColor="Transparent"
+            HasShadow="False"
+            HeightRequest="40"
+            Padding="0"
+            WidthRequest="40">
+            <Image Source="FigmaIcon" x:Name="Image" />
+        </Frame>
+        <StackLayout
+            Grid.Column="1"
+            Spacing="0"
+            VerticalOptions="Center">
+            <Label
+                FontAttributes="Bold"
+                FontSize="14"
+                Text="Competence"
+                TextColor="#242038"
+                x:Name="Name" />
+            <Label Text="Level" x:Name="Level" />
+        </StackLayout>
+    </Grid>
+</ViewCell>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ViewCell
+    x:Class="Ho.ProfilView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:ho="clr-namespace:Ho;assembly=Ho"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid RowSpacing="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout HorizontalOptions="Center" Spacing="10">
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame
+                    BackgroundColor="#242038"
+                    CornerRadius="95"
+                    HeightRequest="100"
+                    Padding="1.5"
+                    WidthRequest="100">
+                    <Frame
+                        BorderColor="#242038"
+                        CornerRadius="95"
+                        HasShadow="False"
+                        IsClippedToBounds="True"
+                        Padding="0">
+                        <Image
+                            Aspect="AspectFill"
+                            Source="https://github.com/Tenlutshy/test/blob/main/Leo.png?raw=true"
+                            x:Name="ProfilImage" />
+                    </Frame>
+                </Frame>
+            </StackLayout>
+
+
+
+            <StackLayout HorizontalOptions="Center" Spacing="0">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    TextColor="#242038"
+                    x:Name="Name" />
+                <Label
+                    FontSize="14"
+                    HorizontalTextAlignment="Center"
+                    TextColor="#725AC1"
+                    x:Name="Title" />
+            </StackLayout>
+
+
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Spacing="20">
+            <StackLayout
+                HorizontalOptions="Center"
+                Orientation="Horizontal"
+                Spacing="15">
+                <Frame
+                    HasShadow="False"
+                    HeightRequest="20"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    WidthRequest="20">
+                    <Image Source="GlobeIcon" />
+                </Frame>
+                <Frame
+                    HasShadow="False"
+                    HeightRequest="20"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    WidthRequest="20">
+                    <Image Source="LinkedinIcon" />
+                </Frame>
+                <Frame
+                    HasShadow="False"
+                    HeightRequest="20"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    WidthRequest="20">
+                    <Image Source="GithubIcon" />
+                </Frame>
+            </StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Image Source="https://github.com/Tenlutshy/test/blob/main/PhoneIcon.png?raw=true" WidthRequest="25" />
+                    <Label
+                        TextColor="#242038"
+                        VerticalOptions="Center"
+                        x:Name="Phone" />
+                </StackLayout>
+                <StackLayout
+                    Grid.Column="1"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
+                    <Image Source="MailIcon" WidthRequest="25" />
+                    <Label
+                        TextColor="#242038"
+                        VerticalOptions="Center"
+                        x:Name="Mail" />
+                </StackLayout>
+            </Grid>
+            <StackLayout HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Image Source="https://github.com/Tenlutshy/test/blob/main/LocIcon.png?raw=true" WidthRequest="25" />
+                    <Label
+                        TextColor="#242038"
+                        VerticalOptions="Center"
+                        WidthRequest="150"
+                        x:Name="Address" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout
+            Grid.Row="2"
+            Spacing="20"
+            x:Name="CaterogiesList" />
+    </Grid>
+</ViewCell>

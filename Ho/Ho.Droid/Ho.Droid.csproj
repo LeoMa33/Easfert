@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{50BC70A9-5D94-4E67-A9EB-14E5463F33E3}</ProjectGuid>
+        <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
+        <RootNamespace>Ho.Droid</RootNamespace>
+        <AssemblyName>Ho.Droid</AssemblyName>
+        <AndroidApplication>True</AndroidApplication>
+        <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+        <AndroidResgenClass>Resource</AndroidResgenClass>
+        <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+        <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+        <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+        <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+        <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
+        <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug</OutputPath>
+        <DefineConstants>DEBUG;</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AndroidLinkMode>None</AndroidLinkMode>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AndroidManagedSymbols>true</AndroidManagedSymbols>
+        <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Mono.Android"/>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Xml.Linq"/>
+        <Reference Include="System.Xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="Plugin.BLE" Version="2.1.3" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="BLEServer.cs" />
+        <Compile Include="BLEServerCallback.cs" />
+        <Compile Include="FileService.cs" />
+        <Compile Include="MainActivity.cs"/>
+        <Compile Include="Resources\Resource.Designer.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="SplashActivity.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Resources\AboutResources.txt"/>
+        <None Include="Assets\AboutAssets.txt"/>
+        <None Include="Properties\AndroidManifest.xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <AndroidResource Include="Resources\Drawable\ArrowIcon.png" />
+        <AndroidResource Include="Resources\Drawable\BoxIcon.png" />
+        <AndroidResource Include="Resources\Drawable\BoxIcon2.png" />
+        <AndroidResource Include="Resources\Drawable\DefaultPic.jpg" />
+        <AndroidResource Include="Resources\Drawable\EasfertIcon.png" />
+        <AndroidResource Include="Resources\Drawable\FigmaIcon.png" />
+        <AndroidResource Include="Resources\Drawable\GithubIcon.png" />
+        <AndroidResource Include="Resources\Drawable\GlobeIcon.png" />
+        <AndroidResource Include="Resources\Drawable\IconTop.png" />
+        <AndroidResource Include="Resources\Drawable\LinkedinIcon.png" />
+        <AndroidResource Include="Resources\Drawable\LocIcon.png" />
+        <AndroidResource Include="Resources\Drawable\Logo.png">
+          <SubType>Designer</SubType>
+        </AndroidResource>
+        <AndroidResource Include="Resources\Drawable\LoupeIcon.png" />
+        <AndroidResource Include="Resources\Drawable\MailIcon.png" />
+        <AndroidResource Include="Resources\Drawable\PhoneIcon.png" />
+        <AndroidResource Include="Resources\Drawable\ProfilIcon.png" />
+        <AndroidResource Include="Resources\Drawable\ProfilIcon2.png" />
+        <AndroidResource Include="Resources\Drawable\rc.png" />
+        <AndroidResource Include="Resources\Drawable\SettingsBtn.png" />
+        <AndroidResource Include="Resources\Drawable\Splash.png" />
+        <AndroidResource Include="Resources\Drawable\splash_screen.xml" />
+        <AndroidResource Include="Resources\layout\Tabbar.axml"/>
+        <AndroidResource Include="Resources\layout\Toolbar.axml"/>
+        <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+        <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+        <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+        <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+        <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+        <AndroidResource Include="Resources\mipmap-ldpi\ic_launcher.png" />
+        <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+        <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+        <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+        <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+        <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+        <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+        <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+        <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+        <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+        <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+        <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+        <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+        <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+        <AndroidResource Include="Resources\values\styles.xml"/>
+        <AndroidResource Include="Resources\values\colors.xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Ho\Ho.csproj">
+            <Project>{4B94AC31-C5D8-4932-AD3C-0A264568B9E9}</Project>
+            <Name>Ho</Name>
+        </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="tsconfig.json" />
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets"/>
+</Project>

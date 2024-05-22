@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    BackgroundColor="#FEFBF9"
+    x:Class="Ho.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:local="clr-namespace:Ho"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit">
+    <AbsoluteLayout>
+        <Grid
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Padding="10"
+            xct:TouchEffect.LongPressCommand="{Binding LongPress}"
+            xct:TouchEffect.LongPressDuration="300"
+            xct:TouchEffect.ShouldMakeChildrenInputTransparent="True">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout
+                    HorizontalOptions="Start"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
+                    <Image HeightRequest="25" Source="./EasfertIcon.png" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        TextColor="Black"
+                        VerticalOptions="Center">
+                        Easfert
+                    </Label>
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Image HeightRequest="25" Source="./SettingsBtn.png" />
+                </StackLayout>
+
+            </Grid>
+
+            <ScrollView
+                Grid.Row="1"
+                Padding="20"
+                x:Name="ContentPage" />
+
+            <StackLayout
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                Orientation="Horizontal"
+                xct:TouchEffect.Command="{Binding ChangePage}">
+                <Frame
+                    BackgroundColor="#f9f6f6"
+                    CornerRadius="30"
+                    Padding="30,10">
+                    <StackLayout
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal"
+                        Spacing="10"
+                        VerticalOptions="Center">
+                        <StackLayout>
+                            <Frame
+                                BackgroundColor="#725AC1"
+                                CornerRadius="100"
+                                HasShadow="False"
+                                HeightRequest="20"
+                                Padding="10"
+                                WidthRequest="20"
+                                x:Name="ProfilBtn">
+                                <Image Source="ProfilIcon" x:Name="ProfilBtnImage" />
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout>
+
+                            <Frame
+                                BackgroundColor="#CAC4CE"
+                                CornerRadius="100"
+                                HasShadow="False"
+                                HeightRequest="20"
+                                Padding="10"
+                                WidthRequest="20"
+                                x:Name="BoiteBtn">
+                                <Image Source="BoxIcon" x:Name="BoiteBtnImage" />
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+
+
+        <AbsoluteLayout
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="#338D86C9"
+            IsVisible="False"
+            x:Name="ActionPop">
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Grid.Row="1"
+                HeightRequest="75"
+                Source="IconTop"
+                x:Name="PopImage" />
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</ContentPage>

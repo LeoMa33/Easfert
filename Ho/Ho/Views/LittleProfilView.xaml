@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ViewCell
+    x:Class="Ho.LittleProfilView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Frame
+        CornerRadius="30"
+        HasShadow="False"
+        HeightRequest="360"
+        IsClippedToBounds="True"
+        Padding="0"
+        WidthRequest="280">
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="GoProfil" />
+        </Frame.GestureRecognizers>
+
+        <AbsoluteLayout>
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                IsVisible="true"
+                Source="DefaultPic"
+                x:Name="ProfilImage" />
+
+            <Grid
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Padding="30">
+                <Grid.Background>
+                    <!--  StartPoint defaults to (0,0)  -->
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="Transparent" Offset="0.1" />
+                        <GradientStop Color="#F7ECE1" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackLayout />
+                <StackLayout Grid.Row="1" Spacing="0">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Sarah"
+                        TextColor="#242038"
+                        x:Name="Name" />
+                    <Label
+                        FontSize="14"
+                        Text="Développeuse Web"
+                        TextColor="#725AC1"
+                        x:Name="Title" />
+                </StackLayout>
+            </Grid>
+
+
+        </AbsoluteLayout>
+
+
+    </Frame>
+</ViewCell>

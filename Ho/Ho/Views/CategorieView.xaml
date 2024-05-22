@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ViewCell
+    x:Class="Ho.Views.CategorieView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout Spacing="20">
+        <Label
+            FontAttributes="Bold"
+            FontSize="14"
+            Text="Categories"
+            TextColor="#242038"
+            x:Name="Name" />
+
+        <StackLayout HorizontalOptions="Center" x:Name="GridView" />
+
+        <!--<Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid ColumnSpacing="15" RowSpacing="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                    BackgroundColor="Transparent"
+                    HasShadow="False"
+                    HeightRequest="15"
+                    Padding="0"
+                    WidthRequest="15">
+                    <Image Source="FigmaIcon" />
+                </Frame>
+                <StackLayout
+                    Grid.Column="1"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        Text="Competence"
+                        TextColor="#242038" />
+                    <Label Text="Level" />
+                </StackLayout>
+            </Grid>
+
+            <Grid
+                ColumnSpacing="15"
+                Grid.Column="1"
+                Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                    BackgroundColor="Transparent"
+                    HasShadow="False"
+                    HeightRequest="15"
+                    Padding="0"
+                    WidthRequest="15">
+                    <Image Source="FigmaIcon" />
+                </Frame>
+                <StackLayout
+                    Grid.Column="1"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        Text="Competence"
+                        TextColor="#242038" />
+                    <Label Text="Level" />
+                </StackLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="15" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                    BackgroundColor="Transparent"
+                    HasShadow="False"
+                    HeightRequest="15"
+                    Padding="0"
+                    WidthRequest="15">
+                    <Image Source="FigmaIcon" />
+                </Frame>
+                <StackLayout
+                    Grid.Column="1"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        Text="Competence"
+                        TextColor="#242038" />
+                    <Label Text="Level" />
+                </StackLayout>
+            </Grid>
+
+            <Grid
+                ColumnSpacing="15"
+                Grid.Column="1"
+                Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                    BackgroundColor="Transparent"
+                    HasShadow="False"
+                    HeightRequest="15"
+                    Padding="0"
+                    WidthRequest="15">
+                    <Image Source="FigmaIcon" />
+                </Frame>
+                <StackLayout
+                    Grid.Column="1"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        Text="Competence"
+                        TextColor="#242038" />
+                    <Label Text="Level" />
+                </StackLayout>
+            </Grid>
+
+        </Grid>-->
+    </StackLayout>
+</ViewCell>
